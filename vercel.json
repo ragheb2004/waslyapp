@@ -1,5 +1,5 @@
 {
   "installCommand": "cd food-delivery && npm install",
-  "buildCommand": "cd food-delivery && npm run build",
-  "outputDirectory": "food-delivery/public/build"
+  "buildCommand": "cd food-delivery && npm run build && rm -rf ../dist && mkdir -p ../dist && cp -r public/build/* ../dist",
+  "outputDirectory": "dist"
 }
