@@ -1,0 +1,54 @@
+name: customer_app
+description: "Food Delivery Customer App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  provider: ^6.1.2
+  image_picker: ^1.0.7
+  http_parser: ^4.0.0
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+  cloud_firestore: ^6.3.0
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: 0.14.4
+  flutter_native_splash: 2.4.7
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/customer-app-centered.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/branding/customer-app-centered.png
+  adaptive_icon_background: "#FFF7ED"
+  adaptive_icon_foreground: assets/branding/customer-app-centered.png
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#FFF7ED"
+  image: assets/branding/customer-app-centered.png
+  android: true
+  ios: true
+  android_gravity: center
+  ios_content_mode: scaleAspectFit
+  fullscreen: true
+  android_12:
+    color: "#FFF7ED"
+    image: assets/branding/customer-app-centered.png
