@@ -1,0 +1,5 @@
+{
+  "installCommand": "cd food-delivery && npm install",
+  "buildCommand": "cd food-delivery && npm run build",
+  "outputDirectory": "food-delivery/public/build"
+}
