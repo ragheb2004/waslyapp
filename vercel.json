@@ -4,7 +4,7 @@
   "buildCommand": "cd food-delivery && npm run build",
   "builds": [
     {
-      "src": "food-delivery/public/index.php",
+      "src": "api/index.php",
       "use": "@vercel/php"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/food-delivery/public/index.php"
+      "dest": "/api/index.php"
     }
   ]
 }
